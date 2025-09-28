@@ -15,4 +15,4 @@ async def item(item_id: int):
 
 @app.get("/index")
 async def index():
-    return {"Hello": "World"} 
+    return {"data": "Hello World"} 
