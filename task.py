@@ -6,10 +6,10 @@ app = FastAPI()
 async def add(a:int,b:int):
     return {"sum": a+b}
 
-
-
 @app.get("/sub/{a}/{b}")
 async def sub(a:int,b:int):
     return {"sub": a-b}
 
-
+@app.get("/mul/{a}/{b}")
+async def mul(a:int,b:int):
+    return {"mul": a*b}
