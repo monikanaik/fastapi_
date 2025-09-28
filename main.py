@@ -11,3 +11,8 @@ async def read_root():
 @app.get("/item/{item_id}")
 async def item(item_id: int):
     return {"Item Id": item_id} 
+
+
+@app.get("/index")
+async def index():
+    return {"Hello": "World"} 
