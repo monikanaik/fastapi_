@@ -13,3 +13,7 @@ async def sub(a:int,b:int):
 @app.get("/mul/{a}/{b}")
 async def mul(a:int,b:int):
     return {"mul": a*b}
+    
+@app.get("/mod/{a}/{b}")
+async def mod(a:int,b:int):
+    return {"mod": a%b}
