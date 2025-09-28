@@ -16,3 +16,9 @@ async def item(item_id: int):
 @app.get("/index")
 async def index():
     return {"data": "Hello World"} 
+
+
+@app.get("/home/{s}")
+async def home(s:str):
+    return {"data": f"{s}"} 
+
