@@ -16,4 +16,4 @@ async def mul(a:int,b:int):
     
 @app.get("/mod/{a}/{b}")
 async def mod(a:int,b:int):
-    return {"mod": a%b}
+    return {"modulo": a%b}
