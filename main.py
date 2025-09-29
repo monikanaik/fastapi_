@@ -22,3 +22,6 @@ async def index():
 async def home(s:str):
     return {"data": f"{s}"} 
 
+
+def title_case(s: str) -> str:
+    return s.title()
