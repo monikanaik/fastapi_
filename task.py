@@ -19,3 +19,7 @@ async def div(a:int,b:int):
     if b == 0:
         return {"error": "Division by zero is not allowed!."}
     return {"div": a/b} 
+    
+@app.get("/mod/{a}/{b}")
+async def mod(a:int,b:int):
+    return {"modulo": a%b}
